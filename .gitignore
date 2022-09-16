@@ -1,3 +1,6 @@
 /**/build/*
 /**/gradle/*
 /**/packages/*
+/**/.vscode/*
+/**/.idea/*
+.idea
