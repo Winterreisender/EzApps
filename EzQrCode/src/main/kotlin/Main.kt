@@ -18,11 +18,11 @@ fun getResource(resPath :String): URL = object {}.javaClass.getResource(resPath)
 
 fun main(args: Array<String>) {
     //UIManager.setLookAndFeel(getSystemLookAndFeelClassName())
-    UIManager.setLookAndFeel(FlatLightLaf())
+    FlatLightLaf.setup()
     JFrame().apply {
         //设置Dialog属性
         title = "EzQrCode"
-        iconImage = toolkit.getImage(getResource("ezqrcode.png")) // 淦 ImageIcon的路径相对路径是相对于工程根目录的位置,不是resource
+        iconImage = toolkit.getImage(getResource("ezqrcode.png"))
         location = GraphicsEnvironment.getLocalGraphicsEnvironment().centerPoint
 
 
@@ -61,7 +61,7 @@ fun main(args: Array<String>) {
                 alignmentX = Component.CENTER_ALIGNMENT
                 addActionListener {
                     MsgBox.msgBoxCallback(getResource("about.htm").readText(),"关于",null,"官网","确定",{
-                        Desktop.getDesktop().browse(URI("https://gitee.com/winter_reisender/EzQrCode")) })
+                        Desktop.getDesktop().browse(URI("https://github.com/Winterreisender/EzQrCode")) })
                 }
             }.also(::add)
         }.also(::add)

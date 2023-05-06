@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.6.10"
+    kotlin("jvm") version "1.7.20"
     id("com.github.johnrengelman.shadow") version "latest.release"
     application
 }
@@ -14,10 +14,9 @@ repositories {
 }
 
 dependencies {
-    implementation("com.google.zxing:core:3.4.1")
-    implementation("com.google.zxing:javase:3.4.1")
-    implementation("com.formdev:flatlaf:2.0.2")
-    implementation("net.java.dev.jna:jna:5.9.0") // not using
+    implementation("com.google.zxing:core:3.5.1")
+    implementation("com.google.zxing:javase:3.5.1")
+    implementation("com.formdev:flatlaf:2.6")
 
 }
 

@@ -7,13 +7,9 @@ import java.awt.BorderLayout
 import java.util.concurrent.Semaphore
 import javax.swing.*
 
-// 垃圾Java,连MsgBox都没有
-
 object MsgBox {
     /**
      * MsgBox not like VB with callback
-     *
-     * 垃圾Java,连MsgBox都没有
      *
      * @author Winterreisender
      * @param text The text to show in Dialog
